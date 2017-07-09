@@ -24,7 +24,9 @@
   export default {
     data () {
       return {
-        user: {}
+        user: {
+          name: "OverrideRe"
+        }
       };
     },
     created () {
@@ -36,8 +38,8 @@
       });
     },
     beforeCreate () {
-      if (this.$route.path === '/') {
-        this.$router.push({path: '/index'})
+      if (this.$router.path === '/') {
+        this.$router.push({path: '/user'})
       }
     },
     components: {
@@ -50,9 +52,9 @@
  
   body {
     font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
-    background-color: #F2F2F2;
+    background-color: #fff;
   }
-  
+
   .container {
     padding-top: 80px;
     height: 100%;
@@ -72,6 +74,33 @@
 
   .container .content-wrapper {
     padding: 20px;
+  }
+
+  .el-row {
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .el-col {
+    border-radius: 4px;
+  }
+  .bg-purple-dark {
+    background: #99a9bf;
+  }
+  .bg-purple {
+    background: #d3dce6;
+  }
+  .bg-purple-light {
+    background: #e5e9f2;
+  }
+  .grid-content {
+    border-radius: 4px;
+    min-height: 36px;
+  }
+  .row-bg {
+    padding: 10px 0;
+    background-color: #f9fafc;
   }
 </style>
 

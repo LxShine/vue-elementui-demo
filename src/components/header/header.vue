@@ -5,7 +5,6 @@
       <ul class="header-operations">
         <li>
           <span class="header-lang is-active">{{user.name}}</span>
-          <span class="header-opacity">({{user.area}}/{{user.identity}})</span>
         </li>
         <li>退出系统</li>
       </ul></header>
@@ -25,7 +24,7 @@
 </script>
 <style>
   header {
-    background-color: rgb(32, 160, 255);
+    background-color: rgb(100, 100, 200);
     height: 80px;
     position: absolute;
     width: 100%;

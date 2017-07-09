@@ -1,9 +1,14 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Index from '../components/index/index.vue'
-import Table from '../components/table/table.vue'
-import Form from '../components/form/form.vue'
-import other from '../components/other/other.vue'
+import User from '../components/blog/user.vue'
+import Article from '../components/blog/article.vue'
+import Comment from '../components/blog/comment.vue'
+import Table from '../components/element/e_table.vue'
+import Form from '../components/element/e_form.vue'
+import NavMenu from '../components/element/e_nav.vue'
+import Pagination from '../components/element/e_page.vue'
+import Tab from '../components/element/e_tab.vue'
+import Step from '../components/element/e_step.vue'
 
 Vue.use(Router)
 
@@ -12,25 +17,42 @@ export default new Router({
   linkActiveClass: 'active',
   routes: [{
     path: '/',
-    redirect: 'index',
+    redirect: 'user',
   }, {
-    path: '/index',
-    component: Index,
+    path: '/user',
+    component: User,
+  }, {
+    path: '/article',
+    component: Article,
+    name: 'article'
+  }, {
+    path: '/comment',
+    component: Comment,
+    name: 'comment'
   }, {
     path: '/table',
     component: Table,
-    name: 'table',
-    class: 'fa-table'
+    name: 'table'
   }, {
     path: '/form',
     component: Form,
-    name: 'form',
-    class: 'fa-newspaper-o'
+    name: 'form'
   }, {
-    path: '/other',
-    component: other,
-    name: 'other',
-    class: 'fa-plug'
+    path: '/navmenu',
+    component: NavMenu,
+    name: 'navmenu'
+  }, {
+    path: '/epage',
+    component: Pagination,
+    name: 'epage'
+  }, {
+    path: '/tab',
+    component: Tab,
+    name: 'tab'
+  }, {
+    path: '/step',
+    component: Step,
+    name: 'step'
   }, {
     path: '*',
     redirect: 'index'
