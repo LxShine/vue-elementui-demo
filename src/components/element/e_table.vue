@@ -117,7 +117,7 @@
       };
     },
     created () {
-      this.$http.get('/api/getTable').then((response) => {
+      this.$http.get('/user/getAllUser.do').then((response) => {
         response = response.data;
         if (response.code === ERR_OK) {
           this.tableData = response.datas;
