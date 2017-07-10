@@ -20,10 +20,6 @@
       return {
         element_item: [
           {
-            title: '表格',
-            path: '/table',
-            class: 'fa-table'
-          }, {
             title: '表单',
             path: '/form',
             class: 'fa-newspaper-o'

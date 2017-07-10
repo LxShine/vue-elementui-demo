@@ -3,7 +3,6 @@ import Router from 'vue-router'
 import User from '../components/blog/user.vue'
 import Article from '../components/blog/article.vue'
 import Comment from '../components/blog/comment.vue'
-import Table from '../components/element/e_table.vue'
 import Form from '../components/element/e_form.vue'
 import NavMenu from '../components/element/e_nav.vue'
 import Pagination from '../components/element/e_page.vue'
@@ -29,10 +28,6 @@ export default new Router({
     path: '/comment',
     component: Comment,
     name: 'comment'
-  }, {
-    path: '/table',
-    component: Table,
-    name: 'table'
   }, {
     path: '/form',
     component: Form,

@@ -20,7 +20,6 @@
 <script>
   import header from '../components/header/header.vue';
   import menu from '../components/menu/menu.vue';
-  // const ERR_OK = "000";
   export default {
     data () {
       return {
@@ -30,17 +29,8 @@
       };
     },
     created () {
-      // this.$http.get('/api/user').then((response) => {
-      //   response = response.data;
-      //   if (response.code === ERR_OK) {
-      //     this.user = response.datas;
-      //   }
-      // });
     },
     beforeCreate () {
-      if (this.$router.path === '/') {
-        this.$router.push({path: '/user'})
-      }
     },
     components: {
       'v-header': header,
