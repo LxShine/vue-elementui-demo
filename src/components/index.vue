@@ -1,5 +1,5 @@
 <template>
-  <div id='app'>
+  <div id='index'>
   <el-row class="container" style="height: 100%">
     <v-header :user="user"></v-header>
     <el-col :span="24" class="main">

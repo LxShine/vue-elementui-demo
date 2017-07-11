@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Index from '../components/index.vue'
+import Login from '../components/login.vue'
 import User from '../components/blog/user.vue'
 import Article from '../components/blog/article.vue'
 import Comment from '../components/blog/comment.vue'
@@ -16,40 +18,52 @@ export default new Router({
   linkActiveClass: 'active',
   routes: [{
     path: '/',
-    redirect: 'user',
-  }, {
-    path: '/user',
-    component: User,
-  }, {
-    path: '/article',
-    component: Article,
-    name: 'article'
-  }, {
-    path: '/comment',
-    component: Comment,
-    name: 'comment'
-  }, {
-    path: '/form',
-    component: Form,
-    name: 'form'
-  }, {
-    path: '/navmenu',
-    component: NavMenu,
-    name: 'navmenu'
-  }, {
-    path: '/epage',
-    component: Pagination,
-    name: 'epage'
-  }, {
-    path: '/tab',
-    component: Tab,
-    name: 'tab'
-  }, {
-    path: '/step',
-    component: Step,
-    name: 'step'
-  }, {
-    path: '*',
+    component: Login,
+    name: 'login',
     redirect: 'index'
+  }, {
+    path: '/login',
+    component: Login,
+    name: 'login',
+  }, {
+    path: '/index',
+    component: Index,
+    name: 'index',
+    children: [{
+      path: '/',
+      redirect: 'user',
+    }, {
+      path: '/index/user',
+      component: User,
+      name: 'user'
+    }, {
+      path: '/index/article',
+      component: Article,
+      name: 'article'
+    }, {
+      path: '/index/comment',
+      component: Comment,
+      name: 'comment'
+    }, {
+      path: '/index/form',
+      component: Form,
+      name: 'form'
+    }, {
+      path: '/index/navmenu',
+      component: NavMenu,
+      name: 'navmenu'
+    }, {
+      path: '/index/epage',
+      component: Pagination,
+      name: 'epage'
+    }, {
+      path: '/index/tab',
+      component: Tab,
+      name: 'tab'
+    }, {
+      path: '/index/step',
+      component: Step,
+      name: 'step'
+    }]
   }]
 })

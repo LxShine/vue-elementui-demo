@@ -21,38 +21,38 @@
         element_item: [
           {
             title: '表单',
-            path: '/form',
+            path: '/index/form',
             class: 'fa-newspaper-o'
           }, {
             title: '分页',
-            path: '/epage',
+            path: '/index/epage',
             class: 'fa-pagelines'
           }, {
             title: '标签页',
-            path: '/tab',
+            path: '/index/tab',
             class: 'fa-tag'
           }, {
             title: '导航栏',
-            path: '/navmenu',
+            path: '/index/navmenu',
             class: 'fa-bars'
           }, {
             title: '步骤条',
-            path: '/step',
+            path: '/index/step',
             class: 'fa-step-forward'
           }
         ],
         blog_item: [
           {
             title: '用户',
-            path: '/user',
+            path: '/index/user',
             class: 'fa-user'
           }, {
             title: '文章',
-            path: '/article',
+            path: '/index/article',
             class: 'fa-newspaper-o'
           }, {
             title: '评论',
-            path: '/comment',
+            path: '/index/comment',
             class: 'fa-comment-o'
           }
         ]

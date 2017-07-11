@@ -134,7 +134,7 @@ export default {
         address: '',
         birthday: '',
       },
-      total: 500,
+      total: 0,
       table_index: 999,
     };
   },
