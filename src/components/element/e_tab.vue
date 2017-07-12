@@ -68,7 +68,7 @@
       <div class="demo-block">
         <el-tabs v-model="editableTabsValue" type="card" editable @edit="handleTabsEdit">
           <el-tab-pane
-            v-for="(item, index) in editableTabs" :label="item.title" :name="item.name">
+            v-for="(item, index) in editableTabs" :label="item.title" :name="item.name" :key="item.name">
             {{item.content}}
           </el-tab-pane>
         </el-tabs>
@@ -89,10 +89,7 @@
         </div>
         <el-tabs v-model="editableTabsValue2" type="card" closable @tab-remove="removeTab">
           <el-tab-pane
-            v-for="(item, index) in editableTabs2"
-            :label="item.title"
-            :name="item.name"
-          >
+            v-for="(item, index) in editableTabs2" :label="item.title" :name="item.name" :key="item.name">
             {{item.content}}
           </el-tab-pane>
         </el-tabs>

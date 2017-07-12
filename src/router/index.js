@@ -18,8 +18,6 @@ export default new Router({
   linkActiveClass: 'active',
   routes: [{
     path: '/',
-    component: Login,
-    name: 'login',
     redirect: 'index'
   }, {
     path: '/login',
@@ -28,9 +26,9 @@ export default new Router({
   }, {
     path: '/index',
     component: Index,
-    name: 'index',
     children: [{
       path: '/',
+      name: 'index',
       redirect: 'user',
     }, {
       path: '/index/user',
