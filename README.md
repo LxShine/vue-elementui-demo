@@ -105,4 +105,4 @@ vue-router2： [vue-router2](https://router.vuejs.org/zh-cn/)
 axios： [axios](https://www.kancloud.cn/yunye/axios/234845)
 
 源码：[前端](https://github.com/OverrideRe/vue-elementui-demo)，[后端](https://github.com/OverrideRe/ssm)
->>>>>>> b0576c1b6ea78440ddb27dd0170bd2572b8647bd
+
